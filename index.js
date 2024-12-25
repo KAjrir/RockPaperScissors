@@ -12,19 +12,17 @@ function getComputerChoice() {
 }
 
 function getHumanChoice(){
-    const myChoice = prompt("What do you choose?", "rock")
+    const myChoice = parseInt(prompt("What do you choose?\nPaper = 1, Scissors = 2, Rock = 3", 1));
     let selectedChoice = 0;
     
     if (myChoice === 1){
-        selectedChoice = 1
-        return console.log("You selected Paper!")
+        selectedChoice = 1;
+        return console.log("You selected Paper!");
     } else if (myChoice === 2){
-        selectedChoice = 2
-        return console.log("You selected Scissors!")
+        selectedChoice = 2;
+        return console.log("You selected Scissors!");
     } else if (myChoice === 3){
-        selectedChoice = 3
-        return console.log("You selected Rock!")
+        selectedChoice = 3;
+        return console.log("You selected Rock!");
     }
-
 }
-
