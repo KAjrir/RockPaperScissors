@@ -13,24 +13,29 @@ function getComputerChoice() {
     return computerChoice;
 }
 
+console.log(getComputerChoice());
 
-function getHumanChoice(){
-    const myChoice = parseInt(prompt("What do you choose?\nPaper = 1, Scissors = 2, Rock = 3", 1));
-    let humanChoice = 0;
+function getHumanChoice() {
+    const myChoice = prompt("What do you choose?");
+    let humanChoice = '';
     
-    if (myChoice === 1){
-        humanChoice = 1;
-        return console.log("You selected Paper!");
-    } else if (myChoice === 2){
-        humanChoice = 2;
-        return console.log("You selected Scissors!");
-    } else if (myChoice === 3){
-        humanChoice = 3;
-        return console.log("You selected Rock!");
+    if (myChoice === 'paper'){
+        humanChoice = 'paper';
+    } else if (myChoice === 'scissors'){
+        humanChoice = 'scissors';
+    } else if (myChoice === 'rock'){
+        humanChoice = 'rock';
+    } else if (myChoice === null || myChoice === undefined){
+        console.log("u heeft het veld verlaten")
+    } else{
+        console.log("invalid input, again")
+        location.reload(true);
     }
 
     return humanChoice;
 }
+
+console.log(getHumanChoice())
 
 let humanScore = 0;
 let computerScore = 0;
