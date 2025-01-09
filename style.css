@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.begin-part{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#score{
+    font-size: 3rem;
+}
+
+.middle-section{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.computerChoice{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.choices{
+    display: flex;
+    gap: 16px;
+}
+
+.choices > span{
+    padding: 12px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.choices > span:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.computerChoice > span{
+    font-size: 2rem;
+}
+
+.outcome{
+    font-size: 3rem;
+    text-align: center;
+}

@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="begin-part">
+            <h1>Rock Paper Scissors</h1>
+            <h3>Score</h3>
+            <p id="score"><span class="humanScore">0</span>:<span class="computerScore">0</span></p>
+        </div>
+    
+        <div class="middle-section">
+            <div class="choices">
+                <span>👊</span>
+                <span>📄</span>
+                <span>✂️</span>
+            </div>
+            <div class="computerChoice">
+                <p>Computer chose:</p>
+                <span></span>
+                <span id="winner-round"></span>
+            </div>
+        </div>
+    
+        <div>
+            <p class="outcome"></p>
+        </div>
+    </div>
 
     
     <script src="./index.js"></script>
